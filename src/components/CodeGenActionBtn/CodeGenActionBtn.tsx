@@ -2,7 +2,7 @@ import './CodeGenActionBtn.scss';
 
 import React, { useState } from 'react';
 
-import * as CodeGenerator from '@alilc/lowcode-code-generator/standalone-loader';
+import * as CodeGenerator from 'rao-lowcode-code-generator-1/standalone-loader';
 import type { ILowCodePluginContext } from '@alilc/lowcode-engine';
 import { ProjectSchema, TransformStage } from '@alilc/lowcode-types';
 import { Button, Drawer, Loading, Message } from '@alifd/next';

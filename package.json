@@ -1,6 +1,6 @@
 {
   "name": "lowcode-solution-gate-lowcode-output-plugin-1",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "集团低代码引擎 - 浏览器出码插件",
   "main": "lib/index.js",
   "module": "es/index.js",

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import FileSaver from 'file-saver';
 import JSZip from 'jszip';
 
-import { Result } from '@alilc/lowcode-code-generator/standalone-loader';
+import { Result } from 'rao-lowcode-code-generator-1/standalone-loader';
 import { Collapse, Message } from '@alifd/next';
 
 import { GravityCode } from '../GravityCode';
