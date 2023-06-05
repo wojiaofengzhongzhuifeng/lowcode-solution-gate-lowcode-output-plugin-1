@@ -2,13 +2,22 @@ import './CodeGenActionBtn.scss';
 
 import React, { useState } from 'react';
 
-import * as CodeGenerator from 'rao-lowcode-code-generator-1/standalone-loader';
+// gate-lowcode-code-generator-2 1.1.5 是添加了lang_string;
+// gate-lowcode-code-generator-2 1.1.2 是不添加了lang_string
+// gate-lowcode-code-generator-2 1.1.6 是不添加 lang_string, 但是保留了部分逻辑
+import * as CodeGenerator from 'gate-lowcode-code-generator-2/standalone-loader';
+// import * as CodeGenerator from '@alilc/lowcode-code-generator/standalone-loader';
+
 import type { ILowCodePluginContext } from '@alilc/lowcode-engine';
 import { ProjectSchema, TransformStage } from '@alilc/lowcode-types';
 import { Button, Drawer, Loading, Message } from '@alifd/next';
 import coerce from 'semver/functions/coerce';
 
 import { CodeGenResult } from '../CodeGenResult';
+
+
+console.log('CodeGenerator', CodeGenerator);
+// console.log('CodeGenerator rao', CodeGenerator1);
 
 export function CodeGenActionBtn({ ctx }: { ctx: ILowCodePluginContext }) {
   const [state, setState] = useState({
@@ -23,6 +32,7 @@ export function CodeGenActionBtn({ ctx }: { ctx: ILowCodePluginContext }) {
 
   const handleClick = async () => {
     try {
+
       // 打开基于 Gravity 的编辑器/出码预览器
       setState((prev) => ({ ...prev, loading: true, visible: true, hasError: false }));
 

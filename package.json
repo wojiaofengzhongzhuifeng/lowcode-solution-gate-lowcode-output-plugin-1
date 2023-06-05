@@ -1,6 +1,6 @@
 {
   "name": "lowcode-solution-gate-lowcode-output-plugin-1",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "集团低代码引擎 - 浏览器出码插件",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -35,7 +35,8 @@
     "jszip": "^3.7.1",
     "semver": "^7.3.5",
     "string-natural-compare": "^3.0.1",
-    "tslib": "^2.3.1"
+    "tslib": "^2.3.1",
+    "gate-lowcode-code-generator-2": "1.1.6"
   },
   "peerDependencies": {
     "@alilc/lowcode-engine": "^1.0.0",

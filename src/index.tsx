@@ -1,5 +1,5 @@
-import * as CodeGenerator from 'rao-lowcode-code-generator-1/standalone-loader';
-// import * as CodeGenerator from 'rao-lowcode-code-generator-1';
+import * as CodeGenerator from '@alilc/lowcode-code-generator/standalone-loader';
+// import * as CodeGenerator from '@alilc/lowcode-code-generator';
 
 import type { ILowCodePluginContext } from '@alilc/lowcode-engine';
 
